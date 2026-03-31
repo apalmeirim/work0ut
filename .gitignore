@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 .env
-release/*
+install/*
 src-tauri/target/*
 
 # Editor directories and files
@@ -27,9 +27,9 @@ src-tauri/target/*
 *.sw?
 
 # Allow distributable installers to be committed
-!release/
-!release/*.exe
-!release/*.msi
+!install/
+!install/*.exe
+!install/*.msi
 !src-tauri/target/
 !src-tauri/target/release/
 !src-tauri/target/release/bundle/
