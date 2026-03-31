@@ -352,9 +352,6 @@ function AuthenticatedApp({
             onUpdateSet={(sectionId, exerciseId, setId, field, value) =>
               dispatch({ type: 'update-set', sectionId, exerciseId, setId, field, value })
             }
-            onMoveSet={(sectionId, exerciseId, setId, direction) =>
-              dispatch({ type: 'move-set', sectionId, exerciseId, setId, direction })
-            }
             onRemoveSet={(sectionId, exerciseId, setId) =>
               dispatch({ type: 'remove-set', sectionId, exerciseId, setId })
             }

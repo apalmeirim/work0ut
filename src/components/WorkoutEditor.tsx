@@ -26,7 +26,6 @@ type WorkoutEditorProps = {
     field: 'reps' | 'weight' | 'restSeconds',
     value: string,
   ) => void
-  onMoveSet: (sectionId: string, exerciseId: string, setId: string, direction: -1 | 1) => void
   onRemoveSet: (sectionId: string, exerciseId: string, setId: string) => void
   onStartTimer: (exerciseId: string, exerciseName: string, setId: string, duration: number) => void
 }
@@ -40,7 +39,6 @@ export function WorkoutEditor({
   onClearTimer,
   onMoveExercise,
   onMoveSection,
-  onMoveSet,
   onRemoveExercise,
   onRemoveSection,
   onRemoveSet,
@@ -82,7 +80,6 @@ export function WorkoutEditor({
             onRemoveExercise={(exerciseId) => onRemoveExercise(section.id, exerciseId)}
             onAddSet={(exerciseId) => onAddSet(section.id, exerciseId)}
             onUpdateSet={(exerciseId, setId, field, value) => onUpdateSet(section.id, exerciseId, setId, field, value)}
-            onMoveSet={(exerciseId, setId, direction) => onMoveSet(section.id, exerciseId, setId, direction)}
             onRemoveSet={(exerciseId, setId) => onRemoveSet(section.id, exerciseId, setId)}
             onStartTimer={(exerciseId, exerciseName, setId, duration) =>
               onStartTimer(exerciseId, exerciseName, setId, duration)

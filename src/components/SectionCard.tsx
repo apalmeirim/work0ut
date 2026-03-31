@@ -18,7 +18,6 @@ type SectionCardProps = {
   onRemoveExercise: (exerciseId: string) => void
   onAddSet: (exerciseId: string) => void
   onUpdateSet: (exerciseId: string, setId: string, field: 'reps' | 'weight' | 'restSeconds', value: string) => void
-  onMoveSet: (exerciseId: string, setId: string, direction: -1 | 1) => void
   onRemoveSet: (exerciseId: string, setId: string) => void
   onStartTimer: (exerciseId: string, exerciseName: string, setId: string, duration: number) => void
 }
@@ -33,7 +32,6 @@ export function SectionCard({
   onAddSet,
   onMove,
   onMoveExercise,
-  onMoveSet,
   onRemove,
   onRemoveExercise,
   onRemoveSet,
@@ -96,7 +94,6 @@ export function SectionCard({
             onRemove={() => onRemoveExercise(exercise.id)}
             onAddSet={() => onAddSet(exercise.id)}
             onUpdateSet={(setId, field, value) => onUpdateSet(exercise.id, setId, field, value)}
-            onMoveSet={(setId, direction) => onMoveSet(exercise.id, setId, direction)}
             onRemoveSet={(setId) => onRemoveSet(exercise.id, setId)}
             onStartTimer={(setId, duration) => onStartTimer(exercise.id, exercise.name, setId, duration)}
           />
