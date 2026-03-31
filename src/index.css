@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: #111111;
+  --color-ink-900: #171717;
+  --color-ink-800: #232323;
+  --color-ink-700: #303030;
+  --color-sky-500: #8e8e8e;
+  --color-sky-400: #b2b2b2;
+  --color-mint-400: #9c9c9c;
+  --color-amber-400: #c4c4c4;
+  --color-rose-400: #adadad;
+  --color-paper-200: #dedede;
+  --color-paper-100: #f3f3f3;
+  --font-display: "iA Writer Mono", "IA Writer Mono", "Segoe UI", monospace;
+  --font-body: "iA Writer Mono", "IA Writer Mono", "Segoe UI", monospace;
+}
+
+:root {
+  font-family: var(--font-body);
+  color: var(--color-paper-100);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.06), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.04), transparent 22%),
+    linear-gradient(180deg, #1a1a1a 0%, #141414 48%, #101010 100%);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(196, 196, 196, 0.24);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
