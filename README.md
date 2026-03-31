@@ -1,6 +1,6 @@
 # work0ut
 
-work0ut is a desktop workout builder app built with Tauri, React, Vite, Tailwind CSS, and Supabase.
+desktop app to create workout plans, and track time during workout. made for working out @ home. 
 
 ## install
 
@@ -10,3 +10,14 @@ Download the latest Windows installer from the repository releases or from the p
 ## run
 
 For local development, install dependencies with `npm install` and start the desktop app with `npm run dev`. To use the app, sign in, create a new workout, add sections, add exercises inside each section, add sets for each exercise, save the workout, and reopen saved workouts from the library. Use the rest timer on individual sets and the session stopwatch controls to track time while training.
+
+
+## tech stack
+
+- tauri
+- react
+- css
+- vite
+- supabase (database)
+- tailwind
+- codex, claude and chatgpt
